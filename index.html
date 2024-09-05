@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب خدمات المناطق</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مكتب خدمات المناطق</h1>
+
+        <form id="addCompanyForm">
+            <input type="text" id="companyNameInput" placeholder="اسم الشركة" required>
+            <input type="text" id="companyIdInput" placeholder="رقم القيد" required>
+            <input type="file" id="fileInput" accept=".pdf" required>
+            <input type="password" id="uploadPassword" placeholder="كلمة السر" required>
+            <button type="submit">إضافة شركة جديدة</button>
+        </form>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="ابحث عن شركة برقم القيد">
+            <button id="searchButton">بحث</button>
+        </div>
+
+        <div class="company-list" id="companyList">
+            <!-- سيتم عرض الشركات هنا -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
